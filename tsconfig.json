@@ -1,7 +1,5 @@
 {
   "extends": "@vue/tsconfig/tsconfig.dom.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
-  "exclude": ["node_moudes", "dist", "build"],
   "compilerOptions": {
     "target": "ES2015",
     "module": "esnext",
@@ -10,5 +8,13 @@
     "paths": {
       "@/*": ["./src/*"]
     }
-  }
+  },
+  "include": [
+    "env.d.ts",
+    "src/**/*.ts",
+    "src/**/*.vue",
+    "src/*.vue",
+    "src/*.ts"
+  ],
+  "exclude": ["node_moudes", "dist"]
 }
