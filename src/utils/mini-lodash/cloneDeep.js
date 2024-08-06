@@ -1,5 +1,6 @@
-import { isPrimitive } from './typed'
+import { isPrimitive } from './isPrimitive'
 
+// 深拷贝
 export function cloneDeep(source) {
   // 基本数据类型不需要深拷贝
   if (isPrimitive(source)) return source

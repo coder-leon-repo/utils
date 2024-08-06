@@ -15,7 +15,8 @@
     "src/**/*.ts",
     "src/**/*.vue",
     "src/*.vue",
-    "src/*.ts"
-, "src/utils/mini-lodash/cloneDeep.js", "src/utils/mini-lodash/index.js", "src/utils/mini-lodash/typed.js"  ],
+    "src/*.ts",
+    "src/utils/**/*.js"
+  ],
   "exclude": ["node_moudes", "dist"]
 }

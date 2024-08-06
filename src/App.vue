@@ -5,6 +5,7 @@
 <script setup lang="ts">
 import { cloneDeep } from './utils/mini-lodash'
 
+/**
 const obj = {
   number: 123,
   string: 'kdsaljfla',
@@ -27,6 +28,19 @@ const result = cloneDeep(obj)
 console.log('obj:', obj)
 console.log('newObj:', result)
 console.log(result === obj)
+ */
+const obj = {
+  name: 'Leon',
+  age: 18
+}
+
+function fn() {
+  console.log('fn~')
+}
+
+const foo = () => {
+  return 'dsaf'
+}
 </script>
 
 <style scoped></style>

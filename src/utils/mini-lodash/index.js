@@ -1,2 +1,2 @@
-export * from './typed'
+export * from './isPrimitive'
 export * from './cloneDeep'
