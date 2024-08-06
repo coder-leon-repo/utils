@@ -2,7 +2,8 @@
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   "compilerOptions": {
     "target": "ES2015",
-    "module": "esnext",
+    "allowJs": true,
+    "module": "ESNext",
     "composite": true,
     "baseUrl": ".",
     "paths": {
@@ -15,6 +16,6 @@
     "src/**/*.vue",
     "src/*.vue",
     "src/*.ts"
-  ],
+, "src/utils/mini-lodash/cloneDeep.js", "src/utils/mini-lodash/index.js", "src/utils/mini-lodash/typed.js"  ],
   "exclude": ["node_moudes", "dist"]
 }

@@ -1,4 +1,4 @@
-import { request } from '@/request/server'
+import { request } from '@/request'
 import type { HomeCategories } from '@/types/home'
 
 export const getHomeCategoriesData = () => {
