@@ -1,5 +1,5 @@
 export type Response<T> = {
-  errcode: 0
-  errmsg: null
+  errcode: number
+  errmsg: string | null
   data: T
 }

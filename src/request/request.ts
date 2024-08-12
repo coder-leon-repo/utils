@@ -28,7 +28,7 @@ instance.interceptors.response.use(
     // 对响应进行一些全局的处理
     console.log('响应拦截器:', response)
     if (response.status >= 200 && response.status < 300) {
-      return response.data
+      return response
     } else {
       // 非 2xx 状态码
       return Promise.reject(`请求失败：${response.status}`)
@@ -44,8 +44,8 @@ export const request = <T>(config: AxiosRequestConfig) => {
   return new Promise<Response<T>>((resolve, reject) => {
     instance
       .request(config)
-      .then((response: any) => {
-        resolve(response)
+      .then((response: AxiosResponse) => {
+        resolve(response.data as Response<T>)
       })
       .catch((error) => {
         reject(error)
